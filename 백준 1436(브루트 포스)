@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	int n, i = 665, count = 0;
+	cin >> n;
+
+	while (1) {
+		string str = to_string(i);
+		if (str.find("666") != string::npos) {
+			count++;
+			if (count == n)
+				break;
+		}
+		i++;
+	}
+	cout << i << endl;
+
+	return 0;
+}
